@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Armazenagem de dados</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+<div class="grid-container">
+<!-- Criando a conexao com o banco de dados -->
+    <div class="grid-item">        
+        <form action="criarConexao.php">
+            <button type="submit" class="btn btn-info">1 - Criar Conexão com BD</button>
+        </form>    
+    </div>
+<!-- Criando o banco de dados -->
+    <div class="grid-item">
+        <form action="criarBancoDados.php">
+            <button type="submit" class="btn btn-info">2 - Criar Banco de Dados</button>
+        </form>
+    </div>
+<!-- Criando as tabelas (Estas tabelas já estarão definidas no arquivo "criarTabelas.php, aqui sera somente o botão para concluir a ação direto no banco") -->
+    <div class="grid-item">
+        <form action="criarTabelas.php">
+            <button type="submit" class="btn btn-info">3 - Criar Tabelas</button>
+        </form>   
+    </div>
+</div>
+
+<!-- Formulario para enviar os dados para o banco -->
+<div class="formulario">   
+    <form action="recebe.php">
+        <div class="form-group">        
+            <label for="">Atendente:*</label>
+            <input type="text" name="nome" id="" class="form-control" placeholder="Digite seu nome">
+            <label for="">Descrição:*</label>
+            <input type="text" name="descricao" id="" class="form-control" placeholder="Informações do atendimento">
+            <label for="">Valor Original: </label>
+            <input type="number" name="valor" id="" class="form-control" placeholder="00,00">
+        </div>
+            <div class="botaoEnviar">
+                <button type="submit" class="btn btn-warning">Cadastrar Informações</button>
+            </div>       
+    </form>
+</div>
+
+<div class="text-center" >
+    <p class="text-primary">Armazenagem de Dados Sabesp</p>
+</div>
+
+</body>
+</html>

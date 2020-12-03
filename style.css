@@ -1,0 +1,54 @@
+.button{
+    font-family: sans-serif;
+    padding: 10px 10px 10px 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(186, 217, 224);
+    padding: 10px;
+  }
+
+.grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=text], input[type=number]:focus {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(186, 217, 224);
+}
+
+.botaoEnviar, .botaoPesquisarBanco, .botaoVoltar{
+    padding: 5px;
+    /* align-content:  */
+}
+
+.footer{
+    background-color: gray;
+    padding: 100px;
+    border: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+
+
